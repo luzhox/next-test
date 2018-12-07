@@ -9,16 +9,16 @@ class Media extends Component{
     }
     render(){
         return(
-            <div className="Media" onClick={this.handleClick}>
+            <div className="Media-item" onClick={this.handleClick}>
                 <div className="media">
                     <img 
-                        src={this.props.image} 
+                        src={this.props.cover} 
                         alt=""
                         width={260}
                         height={160}
                     />
                     <h1>{this.props.title}</h1>
-                    <p>{this.props.autor}</p>
+                    <p>{this.props.author}</p>
                 </div>
             </div>
 
